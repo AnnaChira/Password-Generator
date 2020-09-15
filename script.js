@@ -7,8 +7,17 @@ var upperCase;
 var lowerCase;
 
 function generatePassword() {
-
-}
+    var results = " ";
+    var upperCase = "ABCDEFGHIJKLMNOPQRSTUVWZYZ";
+    var lowerCase = "abcedefghijklmnopqrstuvwxyz";
+    var specialCharacters = "!@#$%&*()^<>?";
+    var numbers = "123456789";
+    var passwordLength = password. length;
+    for (var i = 0; i >= 8; i <= 128){
+        result += password.charAt(Math.floor(Math.random() * passwordLength));
+         }
+         return result;
+      }    
 
 function validate(){
     if (!numbers && !specialCharacters && !upperCase && !lowerCase){
