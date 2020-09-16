@@ -7,14 +7,23 @@ var upperCase;
 var lowerCase;
 
 function generatePassword() {
-    var password = " ";
-    var upperCase = "ABCDEFGHIJKLMNOPQRSTUVWZYZ";
-    var lowerCase = "abcedefghijklmnopqrstuvwxyz";
-    var specialCharacters = "!@#$%&*()^<>?";
-    var numbers = "123456789";{
-    return password;
+    if (!upperCase && true){
+        console.log("ABCDEFGHIJKLMNOPQRSTUVWZYZ");{
+            return true;
+        }
     }
-}    
+    else (!upperCase && false);{
+        return false;
+    }
+    
+    //var password = " ";
+   // var upperCase = "ABCDEFGHIJKLMNOPQRSTUVWZYZ";
+    ///var lowerCase = "abcedefghijklmnopqrstuvwxyz";
+   // var specialCharacters = "!@#$%&*()^<>?";
+    //var numbers = "123456789";{
+    //return password;
+    }
+    
 
 function validate(){
     if (!numbers && !specialCharacters && !upperCase && !lowerCase){
