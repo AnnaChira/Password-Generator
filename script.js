@@ -6,23 +6,65 @@ var passwordLength;
 var upperCase;
 var lowerCase;
 
+  //var password = " ";
+upperCase = "ABCDEFGHIJKLMNOPQRSTUVWZYZ";
+lowerCase = "abcedefghijklmnopqrstuvwxyz";
+specialCharacters = "!@#$%&*()^<>?";
+numbers = "123456789";
+    //return password;
+
+
 function generatePassword() {
-    if (!upperCase && true){
-        console.log("ABCDEFGHIJKLMNOPQRSTUVWZYZ");{
-            return true;
+    
+    if (!numbers && !specialCharacters && !upperCase && !lowerCase){
+        valid = specialCharacters.concat(numbers, upperCase, lowerCase);
+    }
+    else if (!numbers && !specialCharacters && !upperCase){
+        valid = specialCharacters.concat(numbers, upperCase);
+    }
+    else if (!numbers && !specialCharacters && !lowerCase){
+        valid = specialCharacters.concat(numbers, lowerCase);
+    }
+    else if (!numbers && !lowerCase){
+        valid = numbers.concat(lowerCase);
+    }
+    else if (!numbers && !upperCase){
+        valid = numbers.concat(upperCase);
+    }
+    else if (!specialCharacters && upperCase){
+        valid = specialCharacters.concat(upperCase);
+    }
+    else if (!specialCharacters && !!numbers){
+        valid = specialCharacters.concat(numbers);
+    }
+    else if (!specialCharacters && lowerCase){
+        valid = specialCharacters.concat(lowerCase);
+    }
+    else if (!upperCase && !!lowerCase){
+        valid = upperCase.concat(lowerCase);
+    }
+    else if (specialCharacters){
+        valid = specialCharacters;
+    }
+    else if (numbers){
+        valid = numbers;
+    }
+    else if (upperCase){
+        valid = upperCase;
+    }
+    else if (lowerCase){
+        valid = lowerCase;
+    }
+    if (passwordLength!==''){
+        for (var i=0; i < passwordLength.value; i++){
+            text += shuffle.charAt(Math.floor.random() * shuffle.length);
         }
     }
-    else (!upperCase && false);{
-        return false;
-    }
-    
-    //var password = " ";
-   // var upperCase = "ABCDEFGHIJKLMNOPQRSTUVWZYZ";
-    ///var lowerCase = "abcedefghijklmnopqrstuvwxyz";
-   // var specialCharacters = "!@#$%&*()^<>?";
-    //var numbers = "123456789";{
-    //return password;
-    }
+    var ps = password.concat("");
+    UserInput(ps);
+    return generatePassword;
+   
+}
     
 
 function validate(){
